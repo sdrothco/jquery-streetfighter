@@ -4,15 +4,15 @@ $(document).ready(function() {
 	var overRyu = false;
 	$('.title').delay(900).fadeOut();
 	$('.ryu').on('mouseenter', function() {
+		overRyu = true;
 		if(!keyPressed && !mousePressed) {
-			overRyu = true;
 			hideRyu();
 			$('.ryu-ready').show();
 		}
 	})
 	.on('mouseleave', function() {
+		overRyu = false;
 		if(!keyPressed) {
-			overRyu = false;
 			hideRyu();
 			$('.ryu-still').show();
 		}
