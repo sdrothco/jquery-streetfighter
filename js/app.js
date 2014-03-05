@@ -3,7 +3,7 @@ var mousePressed = false;
 $(document).ready(function() {
 	var overRyu = false;
 	$('.title').delay(900).fadeOut();
-	$('.ryu').on('mouseenter', function() {
+	$('.ryu-trigger-area').on('mouseenter', function() {
 		overRyu = true;
 		if(!keyPressed && !mousePressed) {
 			hideRyu();
